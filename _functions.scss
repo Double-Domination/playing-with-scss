@@ -1,0 +1,7 @@
+@function em($recivedInPixels, $fontSize: 16px) {
+  @return ($recivedInPixels/$fontSize) * 1em;
+}
+
+@function col-width($colCount, $width: 100%, $gap: 1%) {
+  @return ($width - $gap * ($colCount - 1)) / $colCount;
+}
